@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <!-- Corregido el detalle de la comilla en UTF-8 -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Asignación#6</title>
+    </head>
+
+    <body>
+        <!-- Seccion 1: Encabezado y Presentacion -->
+        <h1>Universidad Tecnológica de Panamá</h1>
+        <h2>Introducción al Desarrollo Web</h2>
+        
+        <img src="https://tecnodaniel.com/2015/12/04/9-habilidades-que-debe-tener-un-desarrollador-web/" alt="Imagen ilustrativa al Desarrollo Web">
+        
+        <p>Este curso trata sobre los fundamentos básicos para aprender a crear sitios web. Aquí aprenderemos a estructurar páginas usando solamente etiquetas HTML, comprendiendo cómo se organiza la información en el navegador.</p>
+        
+        <!-- Enlaces solicitados: Enlace interno (Ancla al formulario) -->
+        <p>Ir directo al <a href="#formulario-inscripcion">Formulario de Inscripción</a></p>
+
+        <!-- Seccion 2: Contenido Explicativo -->
+        <h3>¿Qué es una página web?</h3>
+        <p>Una página web es un documento digital que contiene información como textos, imágenes, videos y enlaces. Está escrita en un lenguaje que las computadoras y los navegadores pueden entender fácilmente.</p>
+        
+        <!-- Nota: Para videos de YouTube externos se debe usar la etiqueta iframe -->
+        <iframe src="https://www.youtube.com/embed/wSGK_OeyZBA" 
+                width="640" 
+                height="360" 
+                title="Video sobre desarrollo web"
+                frameborder="0" 
+                allowfullscreen>
+        </iframe>
+        <br>
+
+        <h3>¿Cómo funcionan?</h3>
+        <p>Funcionan mediante un proceso de petición y respuesta. Nosotros, desde nuestra computadora (el cliente), escribimos una dirección. Esa solicitud viaja por internet hasta otra computadora (el servidor), la cual nos devuelve los archivos de la página para que el navegador los muestre en pantalla.</p>
+        <br>
+
+        <h3>Tipos de páginas web</h3>
+        <p>Existen principalmente páginas estáticas y dinámicas. Las estáticas siempre muestran el mismo contenido a todos los usuarios, mientras que las dinámicas cambian su información en tiempo real dependiendo de la base de datos o lo que haga el usuario.</p>
+        
+        <!-- Tu etiqueta de audio apuntando a un archivo .mp3 libre -->
+        <audio src="audio/Diferencia entre páginas web estáticas y dinámicas.mp3" controls>
+            Tu navegador no soporta este formato de audio.
+        </audio>
+        <br>
+
+        <h3>Diferencia entre una aplicación web y un sitio web</h3>
+        <p>La diferencia principal está en la interactividad. Un sitio web se usa principalmente para leer o consumir información (como una página de noticias). En cambio, una aplicación web permite al usuario realizar acciones complejas, como crear cuentas, hacer compras o enviar mensajes (como Facebook o la banca en línea).</p>
+        <br>
+
+        <!-- Seccion 3: Tabla Informativa -->
+        <h3>Resumen de Tipos de Páginas</h3>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Tipo de Página Web</th>
+                    <th>Descripción</th>
+                    <th>Ejemplo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Página Estática</td>
+                    <td>Muestra el mismo contenido fijo y no cambia.</td>
+                    <td>Portafolio digital básico</td>
+                </tr>
+                <tr>
+                    <td>Página Dinámica</td>
+                    <td>El contenido cambia según las interacciones.</td>
+                    <td>Tienda virtual o Red Social</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+
+        <!-- Seccion 4: Formulario de Inscripcion -->
+        <h3 id="formulario-inscripcion">Formulario de Inscripción para Estudiantes</h3>
+        <form action="#" method="POST">
+            <p>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </p>
+            <p>
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required>
+            </p>
+            <p>
+                <label for="contrasena">Contraseña:</label>
+                <input type="password" id="contrasena" name="contrasena" required>
+            </p>
+            <p>
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+            </p>
+            <p>
+                <label for="nacimiento">Fecha de Nacimiento:</label>
+                <input type="date" id="nacimiento" name="nacimiento">
+            </p>
+            <p>
+                <label for="cedula">Cédula:</label>
+                <input type="text" id="cedula" name="cedula" placeholder="X-XXX-XXXX">
+            </p>
+            <p>
+                <label>Modalidad:</label><br>
+                <input type="radio" id="presencial" name="modalidad" value="presencial" checked>
+                <label for="presencial">Presencial</label><br>
+                <input type="radio" id="virtual" name="modalidad" value="virtual">
+                <label for="virtual">Virtual</label>
+            </p>
+            <p>
+                <label for="comentarios">Comentarios:</label><br>
+                <textarea id="comentarios" name="comentarios" rows="4" cols="40" placeholder="Escribe tus dudas aquí..."></textarea>
+            </p>
+            <p>
+                <button type="submit">Enviar</button>
+                <button type="reset">Resetear</button>
+            </p>
+        </form>
+        <br>
+
+        <!-- Seccion 5: Enlaces Externos y de Contacto -->
+        <h3>Recursos Adicionales</h3>
+        <p>Puedes aprender más sobre etiquetas en el recurso externo de: <a href="https://w3schools.com" target="_blank">W3Schools Tutoriales</a></p>
+        <p>¿Tienes dudas con la asignación? <a href="mailto:alonso.gonzalez2@utp.ac.pa?subject=Duda%20Asignacion%206">Enviar correo al Profesor</a></p>
+
+    </body>
+</html>
